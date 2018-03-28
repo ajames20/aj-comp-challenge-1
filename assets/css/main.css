@@ -50,7 +50,7 @@ body {
   justify-content: center;
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .card-section {
     flex-wrap: wrap;
     flex-direction: row;
@@ -58,7 +58,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .card-section {
     width: 80%;
   }
@@ -94,15 +94,9 @@ body {
   padding: 1.5rem 1.5rem;
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .card-one {
     flex: 2 0 auto;
-  }
-}
-
-@media (min-width: 900px) {
-  .card-one {
-    height: 32rem;
   }
 }
 
@@ -156,7 +150,7 @@ body {
   flex-direction: column;
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .nav {
     width: 100%;
     height: 5rem;
@@ -168,6 +162,12 @@ body {
   .card-one--button:first-of-type {
     margin-right: 2rem;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-one--button {
+    width: 23%;
   }
 }
 
@@ -184,11 +184,11 @@ body {
 .card-seven,
 .card-eight {
   align-items: center;
-  height: 29rem;
+  height: 30rem;
   width: 100%;
 }
 
-@media (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .card-two,
   .card-three,
   .card-four,
@@ -197,11 +197,14 @@ body {
   .card-seven,
   .card-eight {
     width: 50%;
-    height: 31rem;
+    height: 28rem;
+  }
+  .card-eight {
+    flex: 1;
   }
 }
 
-@media (min-width: 900px) {
+@media screen and (min-width: 900px) {
   .card-two,
   .card-three,
   .card-four,
@@ -210,9 +213,11 @@ body {
   .card-seven,
   .card-eight {
     width: 33.3%;
+    height: auto;
   }
-  .card-two {
-    height: 32rem;
+  .card-seven,
+  .card-eight {
+    flex: 1;
   }
 }
 
@@ -248,7 +253,7 @@ body {
   background-color: var(--primary-orange);
 }
 
-@media (min-width: 900px) {
+@media screen and(min-width: 900px) {
   .card-seven,
   .card-eight {
     flex: 1;
@@ -262,7 +267,7 @@ body {
   background-blend-mode: multiply;
   display: none;
   width: 52%;
-  height: 101vh;
+  height: 100vh;
   background-image: url('../img/designface.jpg');
 }
 
@@ -297,7 +302,7 @@ body {
   fill: var(--primary-black);
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .photo-section {
     display: block;
   }
