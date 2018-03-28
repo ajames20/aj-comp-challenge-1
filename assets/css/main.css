@@ -5,6 +5,7 @@
   --secondary-orange: #E7713B;
   --primary-blue: #418ABF;
   --primary-red: #E06451;
+  --primary-black: #454830;
 }
 
 * {
@@ -54,6 +55,12 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     height: 100vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card-section {
+    width: 80%;
   }
 }
 
@@ -257,6 +264,38 @@ body {
   width: 52%;
   height: 101vh;
   background-image: url('../img/designface.jpg');
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.buttons-wrapper-img {
+  border: 1px solid var(--primary-white);
+  background-color: var(--primary-black);
+  border-radius: 50%;
+  fill: var(--primary-white);
+  height: 4rem;
+  padding: .8rem;
+  width: 4rem;
+  margin: 0 2rem;
+  transition: all .2s ease;
+}
+
+.buttons-wrapper-img:hover {
+  border: 1px solid var(--primary-black);
+  background-color: var(--primary-white);
+}
+
+svg {
+  fill: "#fff";
+}
+
+svg:hover path {
+  fill: var(--primary-black);
 }
 
 @media (min-width: 1200px) {
