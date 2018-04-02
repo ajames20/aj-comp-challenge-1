@@ -292,7 +292,7 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
   display: none;
-  width: 53%;
+  width: 56%;
   height: 100vh;
   background-image: url('../img/designface.jpg');
 }
