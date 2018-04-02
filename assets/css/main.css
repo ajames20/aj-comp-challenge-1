@@ -87,10 +87,11 @@ body {
 
 .card-one {
   background-color: var(--primary-green);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   color: var(--primary-white);
+  display: flex;
+  font-family: 'Helvetica Neue', sans-serif;
+  flex-direction: column;
+  justify-content: center;
   padding: 1.5rem 3rem;
 }
 
@@ -101,14 +102,15 @@ body {
 }
 
 .card-one--header {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  letter-spacing: 1.3px;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
 
 .card-one--text {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .card-one--text:last-of-type {
